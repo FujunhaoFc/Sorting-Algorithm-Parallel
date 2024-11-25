@@ -1,0 +1,627 @@
+Starting Benchmark Suite
+----------------------
+
+Testing with data size: 1000
+
+Data type: Random
+Sequential Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 8): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 16): 0ms (Speedup: -nanx) ✗
+Sequential Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 8): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 16): 0.2ms (Speedup: 0x) ✗
+
+Data type: Nearly Sorted
+Sequential Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 8): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 16): 0ms (Speedup: -nanx) ✗
+Sequential Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 8): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 16): 0.2ms (Speedup: 0x) ✗
+
+Data type: Reverse Sorted
+Sequential Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Quick Sort (Threads: 1): 0.2ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0.4ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: infx) ✓
+Parallel Quick Sort (Threads: 4): 0ms (Speedup: infx) ✓
+Parallel Quick Sort (Threads: 8): 0.2ms (Speedup: 2x) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: infx) ✓
+Sequential Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Heap Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Heap Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Heap Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 8): 0.2ms (Speedup: 0x) ✗
+Parallel Radix Sort (Threads: 16): 0.2ms (Speedup: 0x) ✗
+
+Data type: Few Unique
+Sequential Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Merge Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 8): 0ms (Speedup: -nanx) ✗
+Parallel Heap Sort (Threads: 16): 0ms (Speedup: -nanx) ✗
+Sequential Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 0.2ms (Speedup: 0x) ✗
+Parallel Radix Sort (Threads: 4): 0ms (Speedup: -nanx) ✗
+Parallel Radix Sort (Threads: 8): 0.2ms (Speedup: 0x) ✗
+Parallel Radix Sort (Threads: 16): 1ms (Speedup: 0x) ✗
+
+Testing with data size: 10000
+
+Data type: Random
+Sequential Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 4): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 8): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 16): 1ms (Speedup: 1x) ✓
+Sequential Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 4): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 4): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 8): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 16): 1.2ms (Speedup: 0.833333x) ✗
+Sequential Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 4ms (Speedup: 0.25x) ✗
+Parallel Radix Sort (Threads: 4): 4ms (Speedup: 0.25x) ✗
+Parallel Radix Sort (Threads: 8): 4ms (Speedup: 0.25x) ✗
+Parallel Radix Sort (Threads: 16): 5ms (Speedup: 0.2x) ✗
+
+Data type: Nearly Sorted
+Sequential Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 4): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 8): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 16): 1ms (Speedup: 1x) ✓
+Sequential Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 4): 0.4ms (Speedup: 0x) ✓
+Parallel Quick Sort (Threads: 8): 0ms (Speedup: -nanx) ✓
+Parallel Quick Sort (Threads: 16): 0ms (Speedup: -nanx) ✓
+Sequential Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 4): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 8): 0.2ms (Speedup: 5x) ✗
+Parallel Heap Sort (Threads: 16): 0.2ms (Speedup: 5x) ✗
+Sequential Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 3.8ms (Speedup: 0.263158x) ✗
+Parallel Radix Sort (Threads: 4): 4ms (Speedup: 0.25x) ✗
+Parallel Radix Sort (Threads: 8): 3.2ms (Speedup: 0.3125x) ✗
+Parallel Radix Sort (Threads: 16): 4.2ms (Speedup: 0.238095x) ✗
+
+Data type: Reverse Sorted
+Sequential Merge Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 4): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 8): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 16): 1ms (Speedup: 1x) ✓
+Sequential Quick Sort (Threads: 1): 97.8ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 97ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 96.4ms (Speedup: 1.00622x) ✓
+Parallel Quick Sort (Threads: 4): 96.2ms (Speedup: 1.00832x) ✓
+Parallel Quick Sort (Threads: 8): 96.6ms (Speedup: 1.00414x) ✓
+Parallel Quick Sort (Threads: 16): 96.6ms (Speedup: 1.00414x) ✓
+Sequential Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 1.2ms (Speedup: 0.833333x) ✓
+Parallel Heap Sort (Threads: 4): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 8): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 16): 1.8ms (Speedup: 0.555556x) ✓
+Sequential Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 2ms (Speedup: 0.5x) ✗
+Parallel Radix Sort (Threads: 4): 4.8ms (Speedup: 0.208333x) ✗
+Parallel Radix Sort (Threads: 8): 5ms (Speedup: 0.2x) ✗
+Parallel Radix Sort (Threads: 16): 5.2ms (Speedup: 0.192308x) ✗
+
+Data type: Few Unique
+Sequential Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 4): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 8): 1ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 16): 1ms (Speedup: 1x) ✓
+Sequential Quick Sort (Threads: 1): 9ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 9ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 9ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 4): 9ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 8): 9ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 16): 9ms (Speedup: 1x) ✓
+Sequential Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 4): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 8): 1ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 16): 1ms (Speedup: 1x) ✗
+Sequential Radix Sort (Threads: 1): 0ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 1ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 5.6ms (Speedup: 0.178571x) ✗
+Parallel Radix Sort (Threads: 4): 6.2ms (Speedup: 0.16129x) ✗
+Parallel Radix Sort (Threads: 8): 7ms (Speedup: 0.142857x) ✗
+Parallel Radix Sort (Threads: 16): 7ms (Speedup: 0.142857x) ✗
+
+Testing with data size: 100000
+
+Data type: Random
+Sequential Merge Sort (Threads: 1): 19.8ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 21ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 11.2ms (Speedup: 1.875x) ✓
+Parallel Merge Sort (Threads: 4): 11ms (Speedup: 1.90909x) ✓
+Parallel Merge Sort (Threads: 8): 11.2ms (Speedup: 1.875x) ✓
+Parallel Merge Sort (Threads: 16): 11.2ms (Speedup: 1.875x) ✓
+Sequential Quick Sort (Threads: 1): 10.2ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 11ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 9.6ms (Speedup: 1.14583x) ✓
+Parallel Quick Sort (Threads: 4): 8ms (Speedup: 1.375x) ✓
+Parallel Quick Sort (Threads: 8): 9.6ms (Speedup: 1.14583x) ✓
+Parallel Quick Sort (Threads: 16): 8ms (Speedup: 1.375x) ✓
+Sequential Heap Sort (Threads: 1): 20.2ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 20ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 20.2ms (Speedup: 0.990099x) ✗
+Parallel Heap Sort (Threads: 4): 19ms (Speedup: 1.05263x) ✗
+Parallel Heap Sort (Threads: 8): 19ms (Speedup: 1.05263x) ✗
+Parallel Heap Sort (Threads: 16): 18.2ms (Speedup: 1.0989x) ✗
+Sequential Radix Sort (Threads: 1): 11.2ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 19.4ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 43.2ms (Speedup: 0.449074x) ✗
+Parallel Radix Sort (Threads: 4): 39.6ms (Speedup: 0.489899x) ✗
+Parallel Radix Sort (Threads: 8): 44ms (Speedup: 0.440909x) ✗
+Parallel Radix Sort (Threads: 16): 42ms (Speedup: 0.461905x) ✗
+
+Data type: Nearly Sorted
+Sequential Merge Sort (Threads: 1): 13ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 14ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 9ms (Speedup: 1.55556x) ✓
+Parallel Merge Sort (Threads: 4): 9ms (Speedup: 1.55556x) ✓
+Parallel Merge Sort (Threads: 8): 10.8ms (Speedup: 1.2963x) ✓
+Parallel Merge Sort (Threads: 16): 9.4ms (Speedup: 1.48936x) ✓
+Sequential Quick Sort (Threads: 1): 9.4ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 10.2ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 8.4ms (Speedup: 1.21429x) ✓
+Parallel Quick Sort (Threads: 4): 7.4ms (Speedup: 1.37838x) ✓
+Parallel Quick Sort (Threads: 8): 7.6ms (Speedup: 1.34211x) ✓
+Parallel Quick Sort (Threads: 16): 8.4ms (Speedup: 1.21429x) ✓
+Sequential Heap Sort (Threads: 1): 18ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 18ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 17.8ms (Speedup: 1.01124x) ✗
+Parallel Heap Sort (Threads: 4): 13.2ms (Speedup: 1.36364x) ✗
+Parallel Heap Sort (Threads: 8): 10.2ms (Speedup: 1.76471x) ✗
+Parallel Heap Sort (Threads: 16): 8.2ms (Speedup: 2.19512x) ✗
+Sequential Radix Sort (Threads: 1): 11ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 19ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 42.8ms (Speedup: 0.443925x) ✗
+Parallel Radix Sort (Threads: 4): 47.4ms (Speedup: 0.400844x) ✗
+Parallel Radix Sort (Threads: 8): 37.4ms (Speedup: 0.508021x) ✗
+Parallel Radix Sort (Threads: 16): 39.6ms (Speedup: 0.479798x) ✗
+
+Data type: Reverse Sorted
+Sequential Merge Sort (Threads: 1): 10ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 12ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 6.2ms (Speedup: 1.93548x) ✓
+Parallel Merge Sort (Threads: 4): 6ms (Speedup: 2x) ✓
+Parallel Merge Sort (Threads: 8): 6.4ms (Speedup: 1.875x) ✓
+Parallel Merge Sort (Threads: 16): 6.8ms (Speedup: 1.76471x) ✓
+Sequential Quick Sort (Threads: 1): 9624.2ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 9666.4ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 9667.4ms (Speedup: 0.999897x) ✓
+Parallel Quick Sort (Threads: 4): 9679.4ms (Speedup: 0.998657x) ✓
+Parallel Quick Sort (Threads: 8): 9661.4ms (Speedup: 1.00052x) ✓
+Parallel Quick Sort (Threads: 16): 9667ms (Speedup: 0.999938x) ✓
+Sequential Heap Sort (Threads: 1): 16ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 16ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 16ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 4): 16ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 8): 16ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 16): 16.8ms (Speedup: 0.952381x) ✓
+Sequential Radix Sort (Threads: 1): 11ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 17ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 51.4ms (Speedup: 0.330739x) ✗
+Parallel Radix Sort (Threads: 4): 44.2ms (Speedup: 0.384615x) ✗
+Parallel Radix Sort (Threads: 8): 52.8ms (Speedup: 0.32197x) ✗
+Parallel Radix Sort (Threads: 16): 46.6ms (Speedup: 0.364807x) ✗
+
+Data type: Few Unique
+Sequential Merge Sort (Threads: 1): 14.4ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 1): 16ms (Speedup: 1x) ✓
+Parallel Merge Sort (Threads: 2): 8ms (Speedup: 2x) ✓
+Parallel Merge Sort (Threads: 4): 8.2ms (Speedup: 1.95122x) ✓
+Parallel Merge Sort (Threads: 8): 8.2ms (Speedup: 1.95122x) ✓
+Parallel Merge Sort (Threads: 16): 8.4ms (Speedup: 1.90476x) ✓
+Sequential Quick Sort (Threads: 1): 961.6ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 1): 886.4ms (Speedup: 1x) ✓
+Parallel Quick Sort (Threads: 2): 726.2ms (Speedup: 1.2206x) ✓
+Parallel Quick Sort (Threads: 4): 693.4ms (Speedup: 1.27834x) ✓
+Parallel Quick Sort (Threads: 8): 747.6ms (Speedup: 1.18566x) ✓
+Parallel Quick Sort (Threads: 16): 728.6ms (Speedup: 1.21658x) ✓
+Sequential Heap Sort (Threads: 1): 15ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 1): 15ms (Speedup: 1x) ✓
+Parallel Heap Sort (Threads: 2): 15ms (Speedup: 1x) ✗
+Parallel Heap Sort (Threads: 4): 14ms (Speedup: 1.07143x) ✗
+Parallel Heap Sort (Threads: 8): 14ms (Speedup: 1.07143x) ✗
+Parallel Heap Sort (Threads: 16): 15.8ms (Speedup: 0.949367x) ✗
+Sequential Radix Sort (Threads: 1): 9ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 1): 11ms (Speedup: 1x) ✓
+Parallel Radix Sort (Threads: 2): 60.8ms (Speedup: 0.180921x) ✗
+Parallel Radix Sort (Threads: 4): 74ms (Speedup: 0.148649x) ✗
+Parallel Radix Sort (Threads: 8): 75.4ms (Speedup: 0.145889x) ✗
+Parallel Radix Sort (Threads: 16): 78ms (Speedup: 0.141026x) ✗
+
+Benchmark Results Summary
+------------------------
+
+Parallel Heap Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:        0ms | Speedup:  1.00x ✓
+Size:     1000 | Type:        Random | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:    Few Unique | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:    Few Unique | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:    Few Unique | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:        Random | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:        Random | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:        Random | Threads: 16 | Time:     1.20ms | Speedup:  0.83x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  8 | Time:     0.20ms | Speedup:  5.00x ✗
+Size:    10000 | Type: Nearly Sorted | Threads: 16 | Time:     0.20ms | Speedup:  5.00x ✗
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  2 | Time:     1.20ms | Speedup:  0.83x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads: 16 | Time:     1.80ms | Speedup:  0.56x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:    Few Unique | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:    Few Unique | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:    10000 | Type:    Few Unique | Threads: 16 | Time:     1.00ms | Speedup:  1.00x ✗
+Size:   100000 | Type:        Random | Threads:  1 | Time:    20.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  2 | Time:    20.20ms | Speedup:  0.99x ✗
+Size:   100000 | Type:        Random | Threads:  4 | Time:    19.00ms | Speedup:  1.05x ✗
+Size:   100000 | Type:        Random | Threads:  8 | Time:    19.00ms | Speedup:  1.05x ✗
+Size:   100000 | Type:        Random | Threads: 16 | Time:    18.20ms | Speedup:  1.10x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    18.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  2 | Time:    17.80ms | Speedup:  1.01x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  4 | Time:    13.20ms | Speedup:  1.36x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  8 | Time:    10.20ms | Speedup:  1.76x ✗
+Size:   100000 | Type: Nearly Sorted | Threads: 16 | Time:     8.20ms | Speedup:  2.20x ✗
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  2 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  4 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  8 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads: 16 | Time:    16.80ms | Speedup:  0.95x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:    15.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  2 | Time:    15.00ms | Speedup:  1.00x ✗
+Size:   100000 | Type:    Few Unique | Threads:  4 | Time:    14.00ms | Speedup:  1.07x ✗
+Size:   100000 | Type:    Few Unique | Threads:  8 | Time:    14.00ms | Speedup:  1.07x ✗
+Size:   100000 | Type:    Few Unique | Threads: 16 | Time:    15.80ms | Speedup:  0.95x ✗
+
+Parallel Merge Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:        Random | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads: 16 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads: 16 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads: 16 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  2 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  4 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  8 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads: 16 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    21.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  2 | Time:    11.20ms | Speedup:  1.88x ✓
+Size:   100000 | Type:        Random | Threads:  4 | Time:    11.00ms | Speedup:  1.91x ✓
+Size:   100000 | Type:        Random | Threads:  8 | Time:    11.20ms | Speedup:  1.88x ✓
+Size:   100000 | Type:        Random | Threads: 16 | Time:    11.20ms | Speedup:  1.88x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    14.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  2 | Time:     9.00ms | Speedup:  1.56x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  4 | Time:     9.00ms | Speedup:  1.56x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  8 | Time:    10.80ms | Speedup:  1.30x ✓
+Size:   100000 | Type: Nearly Sorted | Threads: 16 | Time:     9.40ms | Speedup:  1.49x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    12.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  2 | Time:     6.20ms | Speedup:  1.94x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  4 | Time:     6.00ms | Speedup:  2.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  8 | Time:     6.40ms | Speedup:  1.88x ✓
+Size:   100000 | Type: Reverse Sorted | Threads: 16 | Time:     6.80ms | Speedup:  1.76x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  2 | Time:     8.00ms | Speedup:  2.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  4 | Time:     8.20ms | Speedup:  1.95x ✓
+Size:   100000 | Type:    Few Unique | Threads:  8 | Time:     8.20ms | Speedup:  1.95x ✓
+Size:   100000 | Type:    Few Unique | Threads: 16 | Time:     8.40ms | Speedup:  1.90x ✓
+
+Parallel Quick Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:        Random | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:        Random | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Nearly Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.40ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  2 | Time:     0.00ms | Speedup:   infx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  4 | Time:     0.00ms | Speedup:   infx ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  8 | Time:     0.20ms | Speedup:  2.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads: 16 | Time:     0.00ms | Speedup:   infx ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:     1000 | Type:    Few Unique | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type:        Random | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type:        Random | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type:        Random | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  4 | Time:     0.40ms | Speedup:  0.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type: Nearly Sorted | Threads: 16 | Time:     0.00ms | Speedup:  -nanx ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:    97.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  2 | Time:    96.40ms | Speedup:  1.01x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  4 | Time:    96.20ms | Speedup:  1.01x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  8 | Time:    96.60ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads: 16 | Time:    96.60ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  2 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  4 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  8 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads: 16 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    11.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  2 | Time:     9.60ms | Speedup:  1.15x ✓
+Size:   100000 | Type:        Random | Threads:  4 | Time:     8.00ms | Speedup:  1.38x ✓
+Size:   100000 | Type:        Random | Threads:  8 | Time:     9.60ms | Speedup:  1.15x ✓
+Size:   100000 | Type:        Random | Threads: 16 | Time:     8.00ms | Speedup:  1.38x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    10.20ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  2 | Time:     8.40ms | Speedup:  1.21x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  4 | Time:     7.40ms | Speedup:  1.38x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  8 | Time:     7.60ms | Speedup:  1.34x ✓
+Size:   100000 | Type: Nearly Sorted | Threads: 16 | Time:     8.40ms | Speedup:  1.21x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:  9666.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  2 | Time:  9667.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  4 | Time:  9679.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  8 | Time:  9661.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads: 16 | Time:  9667.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:   886.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  2 | Time:   726.20ms | Speedup:  1.22x ✓
+Size:   100000 | Type:    Few Unique | Threads:  4 | Time:   693.40ms | Speedup:  1.28x ✓
+Size:   100000 | Type:    Few Unique | Threads:  8 | Time:   747.60ms | Speedup:  1.19x ✓
+Size:   100000 | Type:    Few Unique | Threads: 16 | Time:   728.60ms | Speedup:  1.22x ✓
+
+Parallel Radix Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:        Random | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:        Random | Threads: 16 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads:  8 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Nearly Sorted | Threads: 16 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  2 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Reverse Sorted | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type: Reverse Sorted | Threads:  8 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type: Reverse Sorted | Threads: 16 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  2 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type:    Few Unique | Threads:  4 | Time:     0.00ms | Speedup:  -nanx ✗
+Size:     1000 | Type:    Few Unique | Threads:  8 | Time:     0.20ms | Speedup:  0.00x ✗
+Size:     1000 | Type:    Few Unique | Threads: 16 | Time:     1.00ms | Speedup:  0.00x ✗
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  2 | Time:     4.00ms | Speedup:  0.25x ✗
+Size:    10000 | Type:        Random | Threads:  4 | Time:     4.00ms | Speedup:  0.25x ✗
+Size:    10000 | Type:        Random | Threads:  8 | Time:     4.00ms | Speedup:  0.25x ✗
+Size:    10000 | Type:        Random | Threads: 16 | Time:     5.00ms | Speedup:  0.20x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  2 | Time:     3.80ms | Speedup:  0.26x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  4 | Time:     4.00ms | Speedup:  0.25x ✗
+Size:    10000 | Type: Nearly Sorted | Threads:  8 | Time:     3.20ms | Speedup:  0.31x ✗
+Size:    10000 | Type: Nearly Sorted | Threads: 16 | Time:     4.20ms | Speedup:  0.24x ✗
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  2 | Time:     2.00ms | Speedup:  0.50x ✗
+Size:    10000 | Type: Reverse Sorted | Threads:  4 | Time:     4.80ms | Speedup:  0.21x ✗
+Size:    10000 | Type: Reverse Sorted | Threads:  8 | Time:     5.00ms | Speedup:  0.20x ✗
+Size:    10000 | Type: Reverse Sorted | Threads: 16 | Time:     5.20ms | Speedup:  0.19x ✗
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  2 | Time:     5.60ms | Speedup:  0.18x ✗
+Size:    10000 | Type:    Few Unique | Threads:  4 | Time:     6.20ms | Speedup:  0.16x ✗
+Size:    10000 | Type:    Few Unique | Threads:  8 | Time:     7.00ms | Speedup:  0.14x ✗
+Size:    10000 | Type:    Few Unique | Threads: 16 | Time:     7.00ms | Speedup:  0.14x ✗
+Size:   100000 | Type:        Random | Threads:  1 | Time:    19.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  2 | Time:    43.20ms | Speedup:  0.45x ✗
+Size:   100000 | Type:        Random | Threads:  4 | Time:    39.60ms | Speedup:  0.49x ✗
+Size:   100000 | Type:        Random | Threads:  8 | Time:    44.00ms | Speedup:  0.44x ✗
+Size:   100000 | Type:        Random | Threads: 16 | Time:    42.00ms | Speedup:  0.46x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    19.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  2 | Time:    42.80ms | Speedup:  0.44x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  4 | Time:    47.40ms | Speedup:  0.40x ✗
+Size:   100000 | Type: Nearly Sorted | Threads:  8 | Time:    37.40ms | Speedup:  0.51x ✗
+Size:   100000 | Type: Nearly Sorted | Threads: 16 | Time:    39.60ms | Speedup:  0.48x ✗
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    17.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  2 | Time:    51.40ms | Speedup:  0.33x ✗
+Size:   100000 | Type: Reverse Sorted | Threads:  4 | Time:    44.20ms | Speedup:  0.38x ✗
+Size:   100000 | Type: Reverse Sorted | Threads:  8 | Time:    52.80ms | Speedup:  0.32x ✗
+Size:   100000 | Type: Reverse Sorted | Threads: 16 | Time:    46.60ms | Speedup:  0.36x ✗
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:    11.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  2 | Time:    60.80ms | Speedup:  0.18x ✗
+Size:   100000 | Type:    Few Unique | Threads:  4 | Time:    74.00ms | Speedup:  0.15x ✗
+Size:   100000 | Type:    Few Unique | Threads:  8 | Time:    75.40ms | Speedup:  0.15x ✗
+Size:   100000 | Type:    Few Unique | Threads: 16 | Time:    78.00ms | Speedup:  0.14x ✗
+
+Sequential Heap Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    20.20ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    18.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    16.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:    15.00ms | Speedup:  1.00x ✓
+
+Sequential Merge Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    19.80ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    13.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    10.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:    14.40ms | Speedup:  1.00x ✓
+
+Sequential Quick Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.20ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:    97.80ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     9.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    10.20ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:     9.40ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:  9624.20ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:   961.60ms | Speedup:  1.00x ✓
+
+Sequential Radix Sort:
+Size:     1000 | Type:        Random | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Nearly Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type: Reverse Sorted | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:     1000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:        Random | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Nearly Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type: Reverse Sorted | Threads:  1 | Time:     1.00ms | Speedup:  1.00x ✓
+Size:    10000 | Type:    Few Unique | Threads:  1 | Time:     0.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:        Random | Threads:  1 | Time:    11.20ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Nearly Sorted | Threads:  1 | Time:    11.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type: Reverse Sorted | Threads:  1 | Time:    11.00ms | Speedup:  1.00x ✓
+Size:   100000 | Type:    Few Unique | Threads:  1 | Time:     9.00ms | Speedup:  1.00x ✓
