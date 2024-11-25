@@ -106,9 +106,8 @@ void ParallelRadixSort::parallelCountSort(std::vector<int>& arr, int exp) {
         int position;
         
         #pragma omp atomic capture
-        {
-            position = --pos[digit];
-        }
+        position = --pos[digit];
+        
         
         output[position] = arr[i];
     }

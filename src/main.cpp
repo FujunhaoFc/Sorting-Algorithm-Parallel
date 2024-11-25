@@ -24,15 +24,15 @@ int main() {
     
     // Define data sizes to test
     std::vector<size_t> dataSizes = {
+        5000,      // 5K elements
         10000,     // 10K elements
-        100000,    // 100K elements
-        1000000,   // 1M elements
-        10000000   // 10M elements
+        50000,     // 50K elements
+        100000     // 100K elements
     };
     
     // Run benchmarks
     // Parameters: data sizes, number of tests per configuration, max thread count
-    benchmark.runBenchmarks(dataSizes, 5, 8);
+    benchmark.runBenchmarks(dataSizes, 5, 16);
     
     // Print results to console
     benchmark.printResults();
