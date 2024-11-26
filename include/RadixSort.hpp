@@ -16,8 +16,9 @@ class ParallelRadixSort : public SortingAlgorithm {
 private:
     static const int RADIX = 256;  // Using 8 bits at a time
     static const int BITS = 32;    // Assuming 32-bit integers
-    
-    void parallelCountSort(std::vector<int>& arr, int exp);
+
+    // Modified to take separate source and destination arrays
+    void parallelCountSort(std::vector<int>& source, std::vector<int>& destination, int exp);
     int getMax(const std::vector<int>& arr);
 
 public:
