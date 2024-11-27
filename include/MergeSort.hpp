@@ -1,13 +1,10 @@
 #pragma once
 #include "SortingAlgorithm.hpp"
-#include <vector>
 
 class SequentialMergeSort : public SortingAlgorithm {
 private:
-    std::vector<int> aux;
     void merge(std::vector<int>& arr, int left, int mid, int right);
     void mergeSort(std::vector<int>& arr, int left, int right);
-    void insertionSort(std::vector<int>& arr, int left, int right);
 
 public:
     SequentialMergeSort();
@@ -16,9 +13,8 @@ public:
 
 class ParallelMergeSort : public SortingAlgorithm {
 private:
-    void merge(std::vector<int>& arr, int left, int mid, int right, std::vector<int>& aux);
-    void parallelMergeSort(std::vector<int>& arr, int left, int right);
-    void insertionSort(std::vector<int>& arr, int left, int right);
+    void merge(std::vector<int>& arr, int left, int mid, int right);
+    void parallelMergeSort(std::vector<int>& arr, int left, int right, int depth = 0);
 
 public:
     ParallelMergeSort();

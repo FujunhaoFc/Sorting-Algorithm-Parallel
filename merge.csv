@@ -1,0 +1,129 @@
+Algorithm,Data Size,Data Type,Thread Count,Average Time (ms),Min Time (ms),Max Time (ms),Std Dev,Speedup,Correctness
+Parallel Merge Sort,10000,Random,1,2.004,1.997,2.012,0.00513809,1,true
+Parallel Merge Sort,10000,Random,2,2.1694,1.989,2.275,0.100554,0.923758,true
+Parallel Merge Sort,10000,Random,4,2.1236,2.088,2.164,0.0307285,0.943681,true
+Parallel Merge Sort,10000,Random,8,2.0212,1.987,2.1,0.0404742,0.99149,true
+Parallel Merge Sort,10000,Random,16,1.952,1.857,2.004,0.05781,1.02664,true
+Parallel Merge Sort,10000,Random,32,1.9358,1.922,1.982,0.0231897,1.03523,true
+Parallel Merge Sort,10000,Random,64,2.115,1.87,2.263,0.153515,0.947518,true
+Parallel Merge Sort,10000,Nearly Sorted,1,1.3292,1.313,1.341,0.0096,1,true
+Parallel Merge Sort,10000,Nearly Sorted,2,1.4514,1.323,1.545,0.0813845,0.915805,true
+Parallel Merge Sort,10000,Nearly Sorted,4,1.424,1.37,1.48,0.0364582,0.933427,true
+Parallel Merge Sort,10000,Nearly Sorted,8,1.3668,1.352,1.392,0.0153023,0.97249,true
+Parallel Merge Sort,10000,Nearly Sorted,16,1.3558,1.328,1.398,0.0302285,0.980381,true
+Parallel Merge Sort,10000,Nearly Sorted,32,1.3658,1.357,1.384,0.0095373,0.973203,true
+Parallel Merge Sort,10000,Nearly Sorted,64,1.5974,1.335,1.787,0.198916,0.832102,true
+Parallel Merge Sort,10000,Reverse Sorted,1,1.0962,1.084,1.113,0.00962081,1,true
+Parallel Merge Sort,10000,Reverse Sorted,2,1.103,1.095,1.119,0.0085557,0.993835,true
+Parallel Merge Sort,10000,Reverse Sorted,4,1.118,1.11,1.127,0.00672309,0.980501,true
+Parallel Merge Sort,10000,Reverse Sorted,8,1.1216,1.113,1.133,0.00731027,0.977354,true
+Parallel Merge Sort,10000,Reverse Sorted,16,1.1258,1.115,1.137,0.00863481,0.973708,true
+Parallel Merge Sort,10000,Reverse Sorted,32,1.1104,1.105,1.125,0.00749933,0.987212,true
+Parallel Merge Sort,10000,Reverse Sorted,64,1.1232,1.117,1.128,0.00511468,0.975962,true
+Parallel Merge Sort,10000,Few Unique,1,1.516,1.506,1.53,0.00802496,1,true
+Parallel Merge Sort,10000,Few Unique,2,1.6612,1.528,1.815,0.0933325,0.912593,true
+Parallel Merge Sort,10000,Few Unique,4,1.648,1.604,1.728,0.045664,0.919903,true
+Parallel Merge Sort,10000,Few Unique,8,1.5998,1.578,1.669,0.0346837,0.947618,true
+Parallel Merge Sort,10000,Few Unique,16,1.5792,1.559,1.6,0.0168808,0.95998,true
+Parallel Merge Sort,10000,Few Unique,32,1.5928,1.537,1.631,0.0309542,0.951783,true
+Parallel Merge Sort,10000,Few Unique,64,1.948,1.501,2.24,0.25932,0.778234,true
+Parallel Merge Sort,100000,Random,1,21.6154,21.582,21.674,0.0338325,1,true
+Parallel Merge Sort,100000,Random,2,11.8102,11.294,13.482,0.845756,1.83023,true
+Parallel Merge Sort,100000,Random,4,11.496,11.363,11.602,0.0770065,1.88025,true
+Parallel Merge Sort,100000,Random,8,11.6316,11.405,11.882,0.204101,1.85833,true
+Parallel Merge Sort,100000,Random,16,11.8158,11.528,12.667,0.428258,1.82936,true
+Parallel Merge Sort,100000,Random,32,11.9226,11.242,14.199,1.14775,1.81298,true
+Parallel Merge Sort,100000,Random,64,13.3518,12.021,16.479,1.59665,1.61891,true
+Parallel Merge Sort,100000,Nearly Sorted,1,14.831,14.762,14.88,0.0417229,1,true
+Parallel Merge Sort,100000,Nearly Sorted,2,9.7178,9.146,11.441,0.875931,1.52617,true
+Parallel Merge Sort,100000,Nearly Sorted,4,9.3358,9.167,9.47,0.128953,1.58862,true
+Parallel Merge Sort,100000,Nearly Sorted,8,9.501,9.153,10.297,0.406191,1.56099,true
+Parallel Merge Sort,100000,Nearly Sorted,16,9.8144,9.455,10.859,0.527938,1.51115,true
+Parallel Merge Sort,100000,Nearly Sorted,32,10.1534,9.636,11.974,0.912056,1.46069,true
+Parallel Merge Sort,100000,Nearly Sorted,64,11.0248,9.891,13.276,1.39365,1.34524,true
+Parallel Merge Sort,100000,Reverse Sorted,1,12.4472,12.1,12.878,0.342174,1,true
+Parallel Merge Sort,100000,Reverse Sorted,2,7.1778,6.813,7.759,0.320935,1.73412,true
+Parallel Merge Sort,100000,Reverse Sorted,4,6.9012,6.805,7.131,0.120586,1.80363,true
+Parallel Merge Sort,100000,Reverse Sorted,8,8.0504,6.988,8.976,0.809757,1.54616,true
+Parallel Merge Sort,100000,Reverse Sorted,16,8.536,7.006,9.146,0.835948,1.4582,true
+Parallel Merge Sort,100000,Reverse Sorted,32,8.7316,7.273,9.158,0.73196,1.42553,true
+Parallel Merge Sort,100000,Reverse Sorted,64,9.1754,7.257,11.659,1.50685,1.35658,true
+Parallel Merge Sort,100000,Few Unique,1,16.4836,16.394,16.521,0.0457323,1,true
+Parallel Merge Sort,100000,Few Unique,2,9.2592,8.565,11.205,0.999608,1.78024,true
+Parallel Merge Sort,100000,Few Unique,4,8.9082,8.634,9.406,0.30018,1.85039,true
+Parallel Merge Sort,100000,Few Unique,8,11.2546,10.94,11.898,0.363636,1.46461,true
+Parallel Merge Sort,100000,Few Unique,16,10.9168,9.006,13.796,1.75642,1.50993,true
+Parallel Merge Sort,100000,Few Unique,32,9.87,8.943,11.594,1.0128,1.67007,true
+Parallel Merge Sort,100000,Few Unique,64,12.1928,10.55,14.331,1.35531,1.35191,true
+Parallel Merge Sort,1000000,Random,1,246.995,246.117,247.77,0.652207,1,true
+Parallel Merge Sort,1000000,Random,2,130.711,128.524,138.303,3.79884,1.88962,true
+Parallel Merge Sort,1000000,Random,4,130.333,129.458,131.337,0.697531,1.8951,true
+Parallel Merge Sort,1000000,Random,8,126.364,124.227,128.717,1.74425,1.95462,true
+Parallel Merge Sort,1000000,Random,16,123.504,120.823,129.964,3.30274,1.99989,true
+Parallel Merge Sort,1000000,Random,32,125.777,123.91,132.134,3.18444,1.96375,true
+Parallel Merge Sort,1000000,Random,64,124.052,119.598,128.868,3.40751,1.99107,true
+Parallel Merge Sort,1000000,Nearly Sorted,1,165.435,164.378,166.116,0.620435,1,true
+Parallel Merge Sort,1000000,Nearly Sorted,2,105.077,101.535,115.313,5.14518,1.57441,true
+Parallel Merge Sort,1000000,Nearly Sorted,4,104.056,103.141,105.846,0.966193,1.58987,true
+Parallel Merge Sort,1000000,Nearly Sorted,8,101.174,99.787,103.109,1.27465,1.63515,true
+Parallel Merge Sort,1000000,Nearly Sorted,16,100.015,97.485,102.756,2.00547,1.65411,true
+Parallel Merge Sort,1000000,Nearly Sorted,32,102.47,100.48,104.623,1.68827,1.61448,true
+Parallel Merge Sort,1000000,Nearly Sorted,64,101.983,96.11,107.186,4.36142,1.62218,true
+Parallel Merge Sort,1000000,Reverse Sorted,1,136.624,135.883,136.931,0.376954,1,true
+Parallel Merge Sort,1000000,Reverse Sorted,2,72.8758,72.729,73.115,0.128644,1.87476,true
+Parallel Merge Sort,1000000,Reverse Sorted,4,71.4384,70.218,75.355,1.96895,1.91248,true
+Parallel Merge Sort,1000000,Reverse Sorted,8,72.0778,69.886,73.342,1.39169,1.89551,true
+Parallel Merge Sort,1000000,Reverse Sorted,16,76.3148,72.919,80.805,3.13551,1.79027,true
+Parallel Merge Sort,1000000,Reverse Sorted,32,74.6426,72.215,78.349,2.17804,1.83038,true
+Parallel Merge Sort,1000000,Reverse Sorted,64,78.3372,77.111,79.027,0.660036,1.74406,true
+Parallel Merge Sort,1000000,Few Unique,1,176.869,176.732,177.049,0.106165,1,true
+Parallel Merge Sort,1000000,Few Unique,2,93.8744,92.787,96.857,1.53438,1.8841,true
+Parallel Merge Sort,1000000,Few Unique,4,94.3694,93.386,95.499,0.867209,1.87422,true
+Parallel Merge Sort,1000000,Few Unique,8,95.814,93.149,98.224,1.85537,1.84596,true
+Parallel Merge Sort,1000000,Few Unique,16,92.8368,91.42,94.316,1.03562,1.90516,true
+Parallel Merge Sort,1000000,Few Unique,32,94.2654,92.699,96.223,1.18073,1.87629,true
+Parallel Merge Sort,1000000,Few Unique,64,99.9742,97.029,103.864,2.57398,1.76915,true
+Parallel Merge Sort,5000000,Random,1,1341.21,1338.56,1344.87,2.41821,1,true
+Parallel Merge Sort,5000000,Random,2,706.621,701.032,712.247,4.04701,1.89806,true
+Parallel Merge Sort,5000000,Random,4,696.77,689.227,707.419,5.90632,1.9249,true
+Parallel Merge Sort,5000000,Random,8,700.478,680.279,731.009,19.9934,1.91471,true
+Parallel Merge Sort,5000000,Random,16,683.726,664.019,709.377,14.8988,1.96162,true
+Parallel Merge Sort,5000000,Random,32,677.703,667.763,696.243,10.0723,1.97906,true
+Parallel Merge Sort,5000000,Random,64,661.096,649.823,682.517,11.154,2.02877,true
+Parallel Merge Sort,5000000,Nearly Sorted,1,896.249,880.66,904.354,8.2858,1,true
+Parallel Merge Sort,5000000,Nearly Sorted,2,562.474,559.387,568.365,3.71981,1.5934,true
+Parallel Merge Sort,5000000,Nearly Sorted,4,558.868,549.674,574.094,8.71155,1.60369,true
+Parallel Merge Sort,5000000,Nearly Sorted,8,554.562,540.959,565.926,9.32444,1.61614,true
+Parallel Merge Sort,5000000,Nearly Sorted,16,555.228,546.441,567.591,8.36931,1.6142,true
+Parallel Merge Sort,5000000,Nearly Sorted,32,546.273,538.346,561.582,9.20831,1.64066,true
+Parallel Merge Sort,5000000,Nearly Sorted,64,539.637,532.762,556.629,8.71362,1.66084,true
+Parallel Merge Sort,5000000,Reverse Sorted,1,723.051,692.916,742.101,18.4525,1,true
+Parallel Merge Sort,5000000,Reverse Sorted,2,399.452,393.496,407.349,4.82944,1.81011,true
+Parallel Merge Sort,5000000,Reverse Sorted,4,404.009,400.717,407.073,2.54309,1.78969,true
+Parallel Merge Sort,5000000,Reverse Sorted,8,398.452,387.756,416.575,9.75938,1.81465,true
+Parallel Merge Sort,5000000,Reverse Sorted,16,398.57,394.923,404.833,3.55414,1.81411,true
+Parallel Merge Sort,5000000,Reverse Sorted,32,399.942,391.259,413.134,7.50926,1.80789,true
+Parallel Merge Sort,5000000,Reverse Sorted,64,400.921,393.866,412.572,6.47602,1.80348,true
+Parallel Merge Sort,5000000,Few Unique,1,967.51,950.665,991.973,15.2504,1,true
+Parallel Merge Sort,5000000,Few Unique,2,504.15,498.368,514.61,5.88041,1.91909,true
+Parallel Merge Sort,5000000,Few Unique,4,510.34,502.831,522.681,7.2266,1.89581,true
+Parallel Merge Sort,5000000,Few Unique,8,505.431,492.793,520.129,11.2246,1.91423,true
+Parallel Merge Sort,5000000,Few Unique,16,510.668,506.189,520.551,5.25594,1.8946,true
+Parallel Merge Sort,5000000,Few Unique,32,508.298,502.221,514.8,5.3595,1.90343,true
+Parallel Merge Sort,5000000,Few Unique,64,527.301,515.456,534.77,6.92545,1.83484,true
+Sequential Merge Sort,10000,Random,1,1.7944,1.678,2.156,0.18164,1,true
+Sequential Merge Sort,10000,Nearly Sorted,1,1.2418,1.148,1.585,0.17168,1,true
+Sequential Merge Sort,10000,Reverse Sorted,1,0.9314,0.925,0.954,0.0113243,1,true
+Sequential Merge Sort,10000,Few Unique,1,1.462,1.342,1.906,0.222154,1,true
+Sequential Merge Sort,100000,Random,1,20.078,19.401,20.316,0.340586,1,true
+Sequential Merge Sort,100000,Nearly Sorted,1,13.189,12.817,13.44,0.204773,1,true
+Sequential Merge Sort,100000,Reverse Sorted,1,10.5228,10.443,10.671,0.0782979,1,true
+Sequential Merge Sort,100000,Few Unique,1,14.9002,14.716,15.048,0.112414,1,true
+Sequential Merge Sort,1000000,Random,1,230.519,221.335,234.444,4.73497,1,true
+Sequential Merge Sort,1000000,Nearly Sorted,1,149.086,143.012,151.119,3.05963,1,true
+Sequential Merge Sort,1000000,Reverse Sorted,1,120.128,119.407,121.066,0.558164,1,true
+Sequential Merge Sort,1000000,Few Unique,1,162.871,161.502,165.522,1.38338,1,true
+Sequential Merge Sort,5000000,Random,1,1249.35,1175.24,1270.33,37.1064,1,true
+Sequential Merge Sort,5000000,Nearly Sorted,1,812.279,781.554,830.15,16.5199,1,true
+Sequential Merge Sort,5000000,Reverse Sorted,1,667.803,659.952,685.68,9.37518,1,true
+Sequential Merge Sort,5000000,Few Unique,1,879.133,872.643,887.163,4.67028,1,true

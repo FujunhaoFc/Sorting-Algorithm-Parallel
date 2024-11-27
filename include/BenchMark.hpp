@@ -9,15 +9,15 @@ class Benchmark {
 public:
     // Result structure for individual tests
     struct TestResult {
-        double avgTime;      // Average time in milliseconds (double for precision)
-        double minTime;      // Minimum time in milliseconds
-        double maxTime;      // Maximum time in milliseconds
-        double stdDev;       // Standard deviation of the times
-        double speedup;      // Speedup compared to the sequential version
-        bool correctness;    // Indicates if the sorting result is correct
-        size_t dataSize;     // Size of the data set
-        std::string dataType; // Type of data (Random, Nearly Sorted, etc.)
-        int threadCount;     // Number of threads used
+        double avgTime;
+        double minTime;
+        double maxTime;
+        double stdDev;
+        double speedup;
+        bool correctness;
+        size_t dataSize;
+        std::string dataType;
+        int threadCount;
     };
 
     // Constructor
@@ -28,8 +28,8 @@ public:
 
     // Main benchmark function
     void runBenchmarks(const std::vector<size_t>& dataSizes, 
-                       int numTests = 5,
-                       int maxThreads = 8);
+                      int numTests = 5,
+                      int maxThreads = 8);
 
     // Results export and display
     void exportResults(const std::string& filename) const;
@@ -51,14 +51,14 @@ private:
     bool verifySorting(const std::vector<int>& data) const;
     
     TestResult runSingleTest(SortingAlgorithm* algo,
-                             std::vector<int>& data,
-                             const std::string& dataType,
-                             size_t dataSize,
-                             int threadCount);
+                           std::vector<int>& data,
+                           const std::string& dataType,
+                           size_t dataSize,
+                           int threadCount);
 
     TestResult calculateStatistics(const std::vector<double>& times,
-                                   const std::string& dataType,
-                                   size_t dataSize,
-                                   int threadCount,
-                                   bool correctness);
+                                 const std::string& dataType,
+                                 size_t dataSize,
+                                 int threadCount,
+                                 bool correctness);
 };

@@ -21,51 +21,25 @@ std::vector<int> Benchmark::generateRandomData(size_t size) {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(1, 1000000);
-
-    // Using a thread-safe random number generator
-    #pragma omp parallel
-    {
-        std::mt19937 local_gen(rd() ^ omp_get_thread_num());
-        std::uniform_int_distribution<> local_dis(1, 1000000);
-        #pragma omp for
-        for (size_t i = 0; i < size; i++) {
-            data[i] = local_dis(local_gen);
-        }
+    
+    #pragma omp parallel for
+    for (size_t i = 0; i < size; i++) {
+        data[i] = dis(gen);
     }
     return data;
 }
 
 std::vector<int> Benchmark::generateNearlySortedData(size_t size, double sortedFraction) {
-    std::vector<int> data(size);
-
-    // Generate sorted data
+    std::vector<int> data = generateRandomData(size);
     size_t sortedElements = static_cast<size_t>(size * sortedFraction);
-    #pragma omp parallel for
-    for (size_t i = 0; i < sortedElements; i++) {
-        data[i] = static_cast<int>(i);
-    }
-
-    // Generate random data for the rest
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(1, 1000000);
-    #pragma omp parallel
-    {
-        std::mt19937 local_gen(rd() ^ omp_get_thread_num());
-        std::uniform_int_distribution<> local_dis(1, 1000000);
-        #pragma omp for
-        for (size_t i = sortedElements; i < size; i++) {
-            data[i] = local_dis(local_gen);
-        }
-    }
+    std::sort(data.begin(), data.begin() + sortedElements);
     return data;
 }
 
 std::vector<int> Benchmark::generateReverseSortedData(size_t size) {
     std::vector<int> data(size);
-    #pragma omp parallel for
     for (size_t i = 0; i < size; i++) {
-        data[i] = static_cast<int>(size - i);
+        data[i] = size - i;
     }
     return data;
 }
@@ -75,15 +49,10 @@ std::vector<int> Benchmark::generateFewUniqueData(size_t size, int numUnique) {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(0, numUnique - 1);
-
-    #pragma omp parallel
-    {
-        std::mt19937 local_gen(rd() ^ omp_get_thread_num());
-        std::uniform_int_distribution<> local_dis(0, numUnique - 1);
-        #pragma omp for
-        for (size_t i = 0; i < size; i++) {
-            data[i] = local_dis(local_gen);
-        }
+    
+    #pragma omp parallel for
+    for (size_t i = 0; i < size; i++) {
+        data[i] = dis(gen);
     }
     return data;
 }
@@ -100,21 +69,21 @@ Benchmark::TestResult Benchmark::runSingleTest(
     int threadCount
 ) {
     omp_set_num_threads(threadCount);
-
+    
     auto start = std::chrono::high_resolution_clock::now();
     algo->sort(data);
     auto end = std::chrono::high_resolution_clock::now();
-
-    // Use high-resolution timing in milliseconds (double)
-    auto duration = std::chrono::duration<double, std::milli>(end - start);
-
+    
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    
     TestResult result;
-    result.avgTime = duration.count(); // Now a double representing milliseconds
+    //result.avgTime = duration.count();
+    result.avgTime = static_cast<double>(duration.count()) / 1000.0; // Convert to milliseconds for consistency
     result.dataType = dataType;
     result.dataSize = dataSize;
     result.threadCount = threadCount;
     result.correctness = verifySorting(data);
-
+    
     return result;
 }
 
@@ -130,22 +99,22 @@ Benchmark::TestResult Benchmark::calculateStatistics(
     result.dataSize = dataSize;
     result.threadCount = threadCount;
     result.correctness = correctness;
-
+    
     // Calculate average
     result.avgTime = std::accumulate(times.begin(), times.end(), 0.0) / times.size();
-
+    
     // Find min and max
     result.minTime = *std::min_element(times.begin(), times.end());
     result.maxTime = *std::max_element(times.begin(), times.end());
-
+    
     // Calculate standard deviation
-    double sumSquares = 0.0;
+    double sumSquares = 0;
     for (double time : times) {
         double diff = time - result.avgTime;
         sumSquares += diff * diff;
     }
     result.stdDev = std::sqrt(sumSquares / times.size());
-
+    
     return result;
 }
 
@@ -154,30 +123,29 @@ void Benchmark::runBenchmarks(
     int numTests,
     int maxThreads
 ) {
-    const double EPSILON = 1e-9; // Small value to prevent division by zero
-
     std::vector<std::string> dataTypes = {
         "Random",
         "Nearly Sorted",
+        "Reverse Sorted",
         "Few Unique"
     };
-
+    
     std::cout << "\nStarting Benchmark Suite\n";
     std::cout << "----------------------\n";
-
+    
     for (size_t size : dataSizes) {
         std::cout << "\nTesting with data size: " << size << std::endl;
-
+        
         for (const auto& dataType : dataTypes) {
             std::cout << "\nData type: " << dataType << std::endl;
-
+            
             for (const auto& algo : algorithms) {
                 for (int threadCount = 1; threadCount <= maxThreads; threadCount *= 2) {
                     if (!algo->isParallel() && threadCount > 1) continue;
-
+                    
                     std::vector<double> times;
                     bool allCorrect = true;
-
+                    
                     for (int test = 0; test < numTests; test++) {
                         // Generate fresh data for each test
                         std::vector<int> data;
@@ -185,48 +153,41 @@ void Benchmark::runBenchmarks(
                             data = generateRandomData(size);
                         else if (dataType == "Nearly Sorted")
                             data = generateNearlySortedData(size);
+                        else if (dataType == "Reverse Sorted")
+                            data = generateReverseSortedData(size);
                         else
                             data = generateFewUniqueData(size);
-
+                        
                         auto result = runSingleTest(algo.get(), data, dataType, size, threadCount);
                         times.push_back(result.avgTime);
                         allCorrect &= result.correctness;
                     }
-
+                    
                     auto stats = calculateStatistics(times, dataType, size, threadCount, allCorrect);
-
+                    
                     // Calculate speedup relative to sequential version if this is parallel
                     if (algo->isParallel() && threadCount > 1) {
                         // Find sequential time for this algorithm/size/datatype combination
-                        double sequentialTime = -1.0;
                         for (const auto& result : results[algo->getName()]) {
-                            if (result.dataSize == size &&
-                                result.dataType == dataType &&
+                            if (result.dataSize == size && 
+                                result.dataType == dataType && 
                                 result.threadCount == 1) {
-                                sequentialTime = result.avgTime;
+                                stats.speedup = result.avgTime / stats.avgTime;
                                 break;
                             }
-                        }
-
-                        if (sequentialTime > EPSILON && stats.avgTime > EPSILON) {
-                            stats.speedup = sequentialTime / stats.avgTime;
-                        } else {
-                            stats.speedup = 0.0;
                         }
                     } else {
                         stats.speedup = 1.0;
                     }
-
+                    
                     results[algo->getName()].push_back(stats);
-
+                    
                     // Print immediate results
-                    std::cout << algo->getName()
-                              << " (Threads: " << threadCount << "): "
-                              << std::fixed << std::setprecision(3)
-                              << stats.avgTime << " ms"
-                              << " (Speedup: " << std::fixed << std::setprecision(2)
-                              << stats.speedup << "x)"
-                              << (stats.correctness ? " ✓" : " ✗") << std::endl;
+                    std::cout << algo->getName() 
+                             << " (Threads: " << threadCount << "): "
+                             << stats.avgTime << "ms"
+                             << " (Speedup: " << stats.speedup << "x)"
+                             << (stats.correctness ? " ✓" : " ✗") << std::endl;
                 }
             }
         }
@@ -235,19 +196,19 @@ void Benchmark::runBenchmarks(
 
 void Benchmark::exportResults(const std::string& filename) const {
     std::ofstream file(filename);
-
+    
     // Write CSV header
     file << "Algorithm,Data Size,Data Type,Thread Count,Average Time (ms),"
          << "Min Time (ms),Max Time (ms),Std Dev,Speedup,Correctness\n";
-
+    
     // Write results
-    for (const auto& [algoName, algoResults] : results) {
-        for (const auto& result : algoResults) {
+    for (const auto& [algoName, results] : results) {
+        for (const auto& result : results) {
             file << algoName << ","
                  << result.dataSize << ","
                  << result.dataType << ","
                  << result.threadCount << ","
-                 << std::fixed << std::setprecision(6) << result.avgTime << ","
+                 << result.avgTime << ","
                  << result.minTime << ","
                  << result.maxTime << ","
                  << result.stdDev << ","
@@ -260,24 +221,23 @@ void Benchmark::exportResults(const std::string& filename) const {
 void Benchmark::printResults() const {
     std::cout << "\nBenchmark Results Summary\n";
     std::cout << "------------------------\n";
-
-    for (const auto& [algoName, algoResults] : results) {
+    
+    for (const auto& [algoName, results] : results) {
         std::cout << "\n" << algoName << ":\n";
-
-        for (const auto& result : algoResults) {
-            std::cout << "Size: " << std::setw(8) << result.dataSize
-                      << " | Type: " << std::setw(13) << result.dataType
-                      << " | Threads: " << std::setw(2) << result.threadCount
-                      << " | Time: " << std::setw(8) << std::fixed << std::setprecision(3)
-                      << result.avgTime << " ms"
-                      << " | Speedup: " << std::setw(5) << std::fixed << std::setprecision(2)
-                      << result.speedup << "x"
-                      << (result.correctness ? " ✓" : " ✗") << "\n";
+        
+        for (const auto& result : results) {
+            std::cout << "Size: " << std::setw(8) << result.dataSize 
+                     << " | Type: " << std::setw(13) << result.dataType
+                     << " | Threads: " << std::setw(2) << result.threadCount
+                     << " | Time: " << std::setw(8) << result.avgTime << "ms"
+                     << " | Speedup: " << std::setw(5) << std::fixed << std::setprecision(2) 
+                     << result.speedup << "x"
+                     << (result.correctness ? " ✓" : " ✗") << "\n";
         }
     }
 }
 
-const std::map<std::string, std::vector<Benchmark::TestResult>>&
+const std::map<std::string, std::vector<Benchmark::TestResult>>& 
 Benchmark::getResults() const {
     return results;
 }
