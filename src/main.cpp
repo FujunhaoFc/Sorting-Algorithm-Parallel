@@ -2,8 +2,6 @@
 #include "Benchmark.hpp"
 #include "MergeSort.hpp"
 #include "QuickSort.hpp"
-#include "HeapSort.hpp"
-#include "ShellSort.hpp"
 #include "RadixSort.hpp"
 
 int main() {
