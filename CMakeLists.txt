@@ -19,8 +19,6 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(SOURCES
     src/MergeSort.cpp
     src/QuickSort.cpp
-    src/HeapSort.cpp
-    src/ShellSort.cpp
     src/RadixSort.cpp
     src/Benchmark.cpp
     src/main.cpp
